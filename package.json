@@ -1,0 +1,22 @@
+{
+  "name": "acepay",
+  "version": "1.0.0",
+  "description": "Projeto para pós graduação IFPE Garanhuns",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_acepay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewerton32/Acepay.git"
+  },
+  "keywords": [
+    "act"
+  ],
+  "author": "Ewerton Souto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewerton32/Acepay/issues"
+  },
+  "homepage": "https://github.com/ewerton32/Acepay#readme"
+}
