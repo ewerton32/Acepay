@@ -18,8 +18,12 @@
   "bugs": {
     "url": "https://github.com/ewerton32/Acepay/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/ewerton32/Acepay#readme",
   "devDependencies": {
     "@angular/cli": "^1.4.3"
   }
+=======
+  "homepage": "https://github.com/ewerton32/Acepay#readme"
+>>>>>>> ced26f2933ffbff134b04cdaec551fd2733349d8
 }
