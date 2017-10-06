@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { LoginService } from './login/login.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,8 @@ import { VenderComponent } from './home/vender/vender.component';
 import { CompraComponent } from './home/compra/compra.component';
 import { DepositodinComponent } from './home/depositodin/depositodin.component';
 import { DepositobtcComponent } from './home/depositobtc/depositobtc.component';
+import { TransferenciaComponent } from './home/transferencia/transferencia.component';
+import { MenuComponent } from './home/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +25,13 @@ import { DepositobtcComponent } from './home/depositobtc/depositobtc.component';
     VenderComponent,
     CompraComponent,
     DepositodinComponent,
-    DepositobtcComponent
+    DepositobtcComponent,
+    TransferenciaComponent,
+    MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [
     LoginService
