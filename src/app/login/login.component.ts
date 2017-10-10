@@ -1,21 +1,27 @@
+
 import { LoginService } from './login.service';
 import { Component, OnInit } from '@angular/core';
-import {ButtonModule} from 'primeng/primeng.js';
+import { UserAcepay } from './../user_acepay/UserAcepay';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-cliente: any;
-login: any;
-senha: any;
-  constructor(private loginService: LoginService) {
-    this.login = this.loginService.getLogin;
+
+
+export class LoginComponent implements OnInit {
+
+  private cliente: UserAcepay = new UserAcepay();
+
+  constructor(private LoginService: LoginService) { }
+
+  ngOnInit() {
+
   }
-  onclick() {
-    console.log(this.login);
+
+  fazerLogin() {
+    console.log(this.cliente);
   }
 
 }

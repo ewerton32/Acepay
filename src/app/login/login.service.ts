@@ -1,11 +1,12 @@
-import { ContaBancaria } from './../conta_bancaria/ContaBancaria';
+/*import { ContaBancaria } from './../conta_bancaria/ContaBancaria';
 import { EnderecoAcepay } from './../util_acepay/EnderecoAcepay';
 import { ClienteAcepay } from './../user_acepay/ClienteAcepay';
+*/
 import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LoginService {
-  endereco: EnderecoAcepay = new EnderecoAcepay('rua',
+  /*endereco: EnderecoAcepay = new EnderecoAcepay('rua',
     123,
     'complemento',
     'bairro',
@@ -31,12 +32,8 @@ export class LoginService {
     'login',
     'senha',
     this.endereco,
-    this.ctBancaria);
+    this.ctBancaria);*/
   constructor() { }
-  getLogin() {
-
-    return this.cliente;
-  }
 
 }
 

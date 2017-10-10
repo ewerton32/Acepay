@@ -17,6 +17,7 @@ export class ClienteAcepay{
 
 
     // Construtor da classe ClienteAcepay
+    /*
     constructor( id_cli_acepay,
         nome_cli_acepay,
         data_nasc_cli_acepay,
@@ -29,5 +30,5 @@ export class ClienteAcepay{
         ct_acepay){
 
 
-        }
+        }*/
 }

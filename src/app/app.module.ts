@@ -1,7 +1,7 @@
 import { routing } from './app.routing';
-import { LoginService } from './login/login.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -14,6 +14,8 @@ import { DepositodinComponent } from './home/depositodin/depositodin.component';
 import { DepositobtcComponent } from './home/depositobtc/depositobtc.component';
 import { TransferenciaComponent } from './home/transferencia/transferencia.component';
 import { MenuComponent } from './home/menu/menu.component';
+
+import { LoginService } from './login/login.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { MenuComponent } from './home/menu/menu.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing
   ],
   providers: [

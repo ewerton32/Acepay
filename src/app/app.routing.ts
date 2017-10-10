@@ -19,7 +19,7 @@ const APP_ROUTES: Routes = [
     { path: 'depositobtc', component : DepositobtcComponent },
     { path: 'depositodin', component : DepositodinComponent },
     { path: 'transferencia', component : TransferenciaComponent },
-    { path: '', component : LoginComponent }
+    { path: '', component : HomeComponent }
 
 ];
 
