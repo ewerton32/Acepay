@@ -23,6 +23,7 @@
     "@angular/cli": "^1.4.3"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta"
+    "@angular/animations": "^4.4.4",
+    "primeng": "^4.2.2"
   }
 }

@@ -1,18 +1,24 @@
-<div> 
-  <img class="logo" src="./assets/logo.png" />
-  
-    <table>
-      <tr>
-        <td>Login: </td>
-        <td><input [(ngModel)]="cliente.login" id="cliente" type="text" class="validate"></td>
-      </tr>
-      <tr>
-        <td>Senha: </td>
-        <td><input [(ngModel)]="cliente.senha" id="cliente" type="password" class="validate"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><button pButton type="button" (click)="fazerLogin()" label="Click">envia</button></td>
-      </tr>
-    </table>
-  </div>
+<!--<img class="logo" src="./assets/logo.png" />-->
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">Login: <i class="fa fa-user"></i></span>
+            <input type="text" pInputText placeholder="Login" [(ngModel)] = 'cliente.login'>         
+        </div>
+    </div>
+    
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">Senha: </span>
+            <input type="password" pInputText placeholder="Senha" [(ngModel)] = 'cliente.senha'>   
+                 
+        </div>
+    </div>
+            
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+           
+            <input type="button" pButton (click)= "fazerLogin()" pInputText placeholder="Website" value="Enviar">      
+        </div>
+    </div>
+</div>

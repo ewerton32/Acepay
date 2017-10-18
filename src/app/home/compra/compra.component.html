@@ -6,17 +6,17 @@
       <td></td>
     </tr>
     <tr>
-      <td><label for="valorminimo">Valor mínimo de compra:</label> </td>
+      <td><label label class="ui-button-text" for="valorminimo">Valor mínimo de compra:</label> </td>
       <td></td>
-      <td><label for="valormaximo">Valor máximo de compra:</label> </td>
+      <td><label label class="ui-inputgroup-addon" for="valormaximo">Valor máximo de compra:</label> </td>
       <td></td>
     </tr>
     <tr>
       <td><br></td>
     </tr>
     <tr>
-      <td><label for="valorcompra">Valor para compra:</label> </td>
-      <td><input type="text" name="valorcompra" id="valorcompra" maxlength="15" style="width:50px "></td>
+      <td><label class="ui-button-text" for="valorcompra">Valor para compra:</label> </td>
+      <td><input type="text" pInputText placeholder="Valor" name="valorcompra" id="valorcompra" maxlength="15" style="width:50px "></td>
       
     </tr>
     <tr>
@@ -24,8 +24,8 @@
     </tr>
   
     <tr>
-      <td><input type="submit" name="comprar" id="compra" value="Comprar"></td>
-      <td><input type="reset" name="limpa" id="limpa"></td>
+      <td><button pButton type="button" icon="fa-check" label="Comprar"></button></td>
+      <td><button class="ui-button-warning" pButton type="reset" label="Limpar"></button></td>
     </tr>
   
   </table>

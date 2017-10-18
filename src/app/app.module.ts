@@ -1,7 +1,9 @@
-import { routing } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -14,8 +16,13 @@ import { DepositodinComponent } from './home/depositodin/depositodin.component';
 import { DepositobtcComponent } from './home/depositobtc/depositobtc.component';
 import { TransferenciaComponent } from './home/transferencia/transferencia.component';
 import { MenuComponent } from './home/menu/menu.component';
+import { MenuModule, MenuItem } from 'primeng/primeng';
+
 
 import { LoginService } from './login/login.service';
+
+// PrimeNg calendar
+import {CalendarModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -33,8 +40,11 @@ import { LoginService } from './login/login.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
-    routing
+    routing,
+    CalendarModule,
+    MenuModule
   ],
   providers: [
     LoginService

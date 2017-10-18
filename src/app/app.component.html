@@ -1,5 +1,30 @@
-  
-  <!--<app-login></app-login>  
- --> 
-<!--<app-home></app-home>-->
-<router-outlet></router-outlet>  
+<div class="centralizadora">
+  <div class="cabecalho">
+    <img class="logo" src="./assets/logo.png" />
+  </div>
+  <div class="menu_esquerdo">
+   
+      <!--<p-menu [model]="items" label="home" ></p-menu>-->
+      
+      <p-menu #menu popup="popup" [model]="items"></p-menu>
+      <button type="button" pButton icon="fa fa-list" label="Menu" (click)="menu.toggle($event)"></button>
+  </div>
+  <!--<div class="menu_direito">
+    <h1>menu direito</h1>
+  </div>-->
+  <div class="central">
+    <!--<app-cad-cliente></app-cad-cliente>-->
+    <!--<app-dados-pessoais></app-dados-pessoais>-->
+    <!--<app-vender></app-vender>-->
+    <!--<app-compra></app-compra>-->
+    <!--<app-depositodin></app-depositodin>-->
+    <!--<app-depositobtc></app-depositobtc>-->
+    <!--<app-transferencia></app-transferencia>-->
+    <!--<app-login></app-login>-->
+    <router-outlet></router-outlet>  
+  </div>
+  <div class="rodape">
+    <p>Sistema Acepay: Ewerton Souto, Gleydson Vasconcelos, Carlos Adriano</p>
+  </div>
+</div>
+

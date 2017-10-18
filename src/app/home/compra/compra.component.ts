@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {InputTextModule} from 'primeng/primeng';
+import {ButtonModule} from 'primeng/primeng';
 
 @Component({
   selector: 'app-compra',
