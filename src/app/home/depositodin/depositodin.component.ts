@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FileUploadModule} from 'primeng/primeng';
 
 @Component({
   selector: 'app-depositodin',

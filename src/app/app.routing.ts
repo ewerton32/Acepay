@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 const APP_ROUTES: Routes = [
 
     { path: 'login', component : LoginComponent },
+    { path: 'home', component : HomeComponent },
     { path: 'compra', component : CompraComponent },
     { path: 'vender', component : VenderComponent },
     { path: 'dados', component : DadosPessoaisComponent },

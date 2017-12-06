@@ -20,10 +20,14 @@
   },
   "homepage": "https://github.com/ewerton32/Acepay#readme",
   "devDependencies": {
-    "@angular/cli": "^1.4.3"
+    "@angular/cli": "^1.4.3",
+    "@types/chart.js": "^2.6.13"
   },
   "dependencies": {
     "@angular/animations": "^4.4.4",
+    "angularfire2": "^5.0.0-rc.3",
+    "chart.js": "^2.7.1",
+    "firebase": "^4.6.2",
     "primeng": "^4.2.2"
   }
 }

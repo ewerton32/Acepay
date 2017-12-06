@@ -16,7 +16,7 @@ import { DepositodinComponent } from './home/depositodin/depositodin.component';
 import { DepositobtcComponent } from './home/depositobtc/depositobtc.component';
 import { TransferenciaComponent } from './home/transferencia/transferencia.component';
 import { MenuComponent } from './home/menu/menu.component';
-import { MenuModule, MenuItem } from 'primeng/primeng';
+import { MenuModule, MenuItem, ChartModule } from 'primeng/primeng';
 
 
 import { LoginService } from './login/login.service';
@@ -44,7 +44,8 @@ import {CalendarModule} from 'primeng/primeng';
     FormsModule,
     routing,
     CalendarModule,
-    MenuModule
+    MenuModule,
+    ChartModule
   ],
   providers: [
     LoginService

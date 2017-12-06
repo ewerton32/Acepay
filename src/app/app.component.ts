@@ -13,12 +13,13 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'Dados Pessoais', icon: 'fa-plus', target: '', routerLink: '/dados' },
-      { label: 'Comprar Bitcoin', icon: 'fa-download', routerLink: '/compra' },
-      { label: 'Vender Bitcoin', icon: 'fa-download', routerLink: '/vender' },
-      { label: 'Depósito Bitcoin', icon: 'fa-refresh', routerLink: '/depositobtc' },
-      { label: 'Depósito Dinheiro', icon: 'fa-refresh', routerLink: '/depositodin' },
-      { label: 'Transferir Bitcoin', icon: 'fa-refresh', routerLink: '/transferencia' }
+      { label: 'Home', icon: 'fa-home', target: '', routerLink: '/' },
+      { label: 'Dados Pessoais', icon: 'fa-smile-o', routerLink: '/dados' },
+      { label: 'Comprar Bitcoin', icon: 'fa-plus-square', routerLink: '/compra' },
+      { label: 'Vender Bitcoin', icon: 'fa-minus-square', routerLink: '/vender' },
+      { label: 'Depósito Bitcoin', icon: 'fa-btc', routerLink: '/depositobtc' },
+      { label: 'Depósito Dinheiro', icon: 'fa-money', routerLink: '/depositodin' },
+      { label: 'Transferir Bitcoin', icon: 'fa-chain', routerLink: '/transferencia' }
 
     ];
   }
