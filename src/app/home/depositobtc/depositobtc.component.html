@@ -6,8 +6,26 @@
     <td><br></td>
   </tr>
 
-  <tr><label for="enderecobtc">Gerar Endereço Bitcoin:</label> <br> </tr>
-  <tr><input type="submit" name="gerarendereco" id="gerarendereco" value="Gerar"></tr>
-  <tr><input type="text" name="enderecobtc" id="enderecobtc" maxlength="200" style="width:300px"> <input type="submit" name="copia" id="copia" value="Copiar"></tr>
+  <tr>
+     
+  </tr>
+  
+  <tr>
+  
+      <button pButton type="button" (click)="onclick()" label="Gerar Endereço Btc"></button>   
+  
+  </tr>
+  
+  <tr>
+  
+      <span class="ui-float-label">
+        
+          <input id="float-input" type="text" size="45" pInputText> 
+          <label for="float-input">Endereço BTC</label>
+          <button pButton class="ui-button-secondary" type="button" (click)="onclick()" label="Copiar"></button>
+          
+      </span>
+      
+  </tr>
   
 </table>

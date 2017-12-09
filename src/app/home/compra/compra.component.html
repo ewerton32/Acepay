@@ -1,7 +1,7 @@
 <table>
     <tr>
       <td>
-        <h1>Comprar:</h1>
+        <h1>Ordem de compra:</h1>
       </td>
       <td></td>
     </tr>
@@ -15,9 +15,13 @@
       <td><br></td>
     </tr>
     <tr>
-      <td><label class="ui-button-text" for="valorcompra">Valor para compra:</label> </td>
-      <td><input type="text" pInputText placeholder="Valor" name="valorcompra" id="valorcompra" maxlength="15" style="width:50px "></td>
-      
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-credit-card"></i></span>  
+        <span class="ui-inputgroup-addon"><i class="fa fa-money"></i></span>   
+        <input type="text" pInputText placeholder="Valor de compra"> 
+        <span class="ui-inputgroup-addon">$</span>  
+        <span class="ui-inputgroup-addon">.00</span>      
+    </div>
     </tr>
     <tr>
       <td><br></td>

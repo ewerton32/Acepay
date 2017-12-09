@@ -6,36 +6,51 @@
     <td><br></td>
   </tr>
   <tr>
-    <td><label for="valordeposito">Dados bancário Acepay:</label> <br> </td>
+    <td><label for="valordeposito">Dados bancários Acepay:</label> <br> </td>
     <td> <br><br><br></td>
   </tr>
   <tr>
-    <td><label for="valordeposito">Valor a ser depositado:</label> </td>
-    <td><input type="text" name="valordeposito" id="valordeposito" maxlength="15" style="width:50px"> </td>
+   <span class="ui-float-label">
+          <input id="float-input" type="text" size="20" pInputText> 
+          <label for="float-input">Valo do depósito</label>
+          <button pButton type="button" (click)="onclick()" label="Deposito"></button>
+      </span>
+  
   </tr>
   <tr>
     <td><br></td>
   </tr>
   <tr>
-    <td><input type="submit" name="enviardep" id="enviardep" value="Depositar"></td>
-    <td></td>
+     <td></td>
   </tr>
   <tr>
     <td><br></td>
   </tr>
   <tr>
-    <td><label for="comprovantedep">Comprovante de depósito:</label> </td>
     <td>
-      <input type="file" name="comprovantedep" id="comprovantedep" maxlength="150" style="width:200px "></td>
-
+      <p-fileUpload name="myfile[]" url="./upload.php" multiple="multiple"
+      accept="image/*" maxFileSize="1000000">
+      <ng-template pTemplate="toolbar">
+          <div>Enviar 3 comprovantess</div>
+      </ng-template>  
+      <ng-template let-file pTemplate="file">
+          <div>Mostras arquivos a enviar</div>
+      </ng-template> 
+      <ng-template pTemplate="content">
+          <!--<div>Custom UI to manage uploaded files</div>-->
+      </ng-template>  
+      </p-fileUpload> 
+    </td>
+  
+        
   </tr>
   <tr>
     <td><br></td>
   </tr>
 
   <tr>
-    <td><input type="submit" name="enviarcomp" id="enviarcomp" value="Enviar"></td>
-    <td><input type="reset" name="limpa" id="limpa"></td>
+    <td> <button pButton type="button" (click)="onclick()" label="Enviar"></button></td>
+    <button pButton class="ui-button-warning" type="button" (click)="onclick()" label="Redefinir"></button>
   </tr>
 
 </table>

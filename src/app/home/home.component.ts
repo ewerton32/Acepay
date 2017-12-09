@@ -18,12 +18,12 @@ export class HomeComponent {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
-          label: 'First Dataset',
-          data: [65, 59, 80, 81, 56, 55, 40]
+          label: 'Valor BTC',
+          data: [650, 759, 1560, 2000, 5660, 9085, 8500]
         },
         {
-          label: 'Second Dataset',
-          data: [28, 48, 40, 19, 86, 27, 90]
+          label: 'Volume de Transações',
+          data: [280, 480, 400, 1900, 856, 270, 700]
         }
       ]
     };

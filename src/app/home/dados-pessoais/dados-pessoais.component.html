@@ -6,32 +6,67 @@
       <td></td>
     </tr>
     <tr>
-      <td><label for="nome">Nome:</label> </td>
-      <td></td>
-      <td><label for="datanasc">Data de nascimento:</label></td>
-      <td></td>
+        
+      <td>
+      <span class="ui-float-label">
+        
+          <input id="float-input" type="text" size="30" pInputText> 
+          <label for="float-input">Nome</label>
+      </span>
+      </td>
+      
+      <td>
+        <p-calendar [(ngModel)]="date10">
+            <ng-template pTemplate="date" let-date>
+                <span [ngStyle]="{backgroundColor: (date.day < 21 && date.day > 10) ? '#7cc67c' : 'inherit'}" style="border-radius:50%">{{date.day}}</span>
+            </ng-template>
+        </p-calendar>   
+      </td>
     </tr>
     <tr>
-      <td><label for="cpf">CPF:</label></td>
-      <td></td>
-      <td><label for="rg">RG:</label></td>
-      <td></td>
+      <td><span class="ui-float-label">
+          <input id="float-input" type="text" size="20" pInputText> 
+          <label for="float-input">CPF</label>
+      </span>
+ </td>
+      <td><span class="ui-float-label">
+          <input id="float-input" type="text" size="20" pInputText> 
+          <label for="float-input">RG</label>
+      </span>
+</td>
     </tr>
     <tr>
       <td>
         <h1>Contatos:</h1>
       </td>
       <tr>
-        <td><label for="telefone">Telefone:</label> </td>
-        <td></td>
-        <td><label for="telefone">Celular:</label> </td>
-        <td></td>
-      </tr>
+        <td><span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText> 
+            <label for="float-input">Telefone</label>
+        </span>
+        </td>
+        <td>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">CPF</label>
+            </span>
+      
+
+        </td>
+     </tr>
       <tr>
-        <td><label for="email1">Email1:</label> </td>
-        <td></td>
-        <td><label for="email2">Email2:</label> </td>
-        <td></td>
+        <td><span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText> 
+            <label for="float-input">Email</label>
+        </span>
+        </td>
+        <td>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">Confirme o Email</label>
+            </span>
+       
+        </td>
 
       </tr>
       <tr>
@@ -40,32 +75,51 @@
         </td>
         <tr>
           <tr>
-            <td><label for="rua">Rua:</label> </td>
-            <td></td>
-            <td><label for="numero">Numero:</label> </td>
-            <td></td>
+            <td><span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">Rua</label>
+            </span>
+            </td>
+            <td><span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">Número</label>
+            </span>
+            </td>
+           
 
           </tr>
 
           <tr>
-            <td><label for="bairro">Bairro:</label> </td>
-            <td></td>
+            <td><span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">Bairro</label>
+            </span>
+      </td>
           </tr>
           <tr>
-            <td><label for="complemento">Complemento:</label> </td>
-            <td></td>
+            <td><span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText> 
+                <label for="float-input">Cidade</label>
+            </span>
+      </td>
+          <tr>
+              <span class="ui-float-label">
+                  <input id="float-input" type="text" size="30" pInputText> 
+                  <label for="float-input">UF</label>
+              </span>         
           </tr>
           <tr>
-            <td><label for="cidade">Cidade:</label> </td>
-            <td></td>
-          </tr>
+              <span class="ui-float-label">
+                  <input id="float-input" type="text" size="30" pInputText> 
+                  <label for="float-input">Pais</label>
+              </span>    
+            
+          </tr> 
           <tr>
-              <td><br></td>
-              
-            </tr>
-          <tr>
-              <td><input type="submit" name="enviar" id="enviar"></td>
-              <td><input type="reset" name="limpa" id="limpa"></td>
+              <td> <button pButton type="button" (click)="onclick()" label="Enviar"></button>
+              </td>
+              <td> <button pButton class="ui-button-warning" type="button" (click)="onclick()" label="Redefinir"></button>
+              </td>
             </tr>
 
   </table>

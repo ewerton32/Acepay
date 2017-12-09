@@ -6,11 +6,28 @@
     <td><br></td>
   </tr>
 
-  <tr><label for="enderecobtc">Valor Bitcoin:</label> <br> </tr>
-  <tr><input type="text" name="valorbtc" id="valorbtc" maxlength="20" style="width:30px"></tr>
-  <tr><label for="enderecobtc">Endereço destino Bitcoin:</label> <br> </tr>
-  <tr><input type="text" name="enderecobtc" id="enderecobtc" maxlength="200" style="width:300px">
-    <input type="submit" name="envia" id="envia" value="Enviar">
+ <tr>
+    
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-credit-card"></i></span>  
+        <span class="ui-inputgroup-addon"><i class="fa fa-btc"></i></span>   
+        <input type="text" pInputText placeholder="Valor em BTC"> 
+        <span class="ui-inputgroup-addon">$</span>  
+        <span class="ui-inputgroup-addon">.00</span>      
+    </div>
+
   </tr>
+  <tr><br> </tr>
+  <tr>
+      <span class="ui-float-label">
+          <input id="float-input" type="text" size="20" pInputText> 
+          <label for="float-input">Endereço BTC</label>
+          <button pButton type="button" (click)="onclick()" label="Enviar"></button>
+      </span>
+    
+      
+      
+    
+    </tr>
 
 </table>
