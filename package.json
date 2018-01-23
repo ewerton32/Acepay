@@ -26,6 +26,7 @@
   "dependencies": {
     "@angular/animations": "^4.4.4",
     "angularfire2": "^5.0.0-rc.3",
+    "bitcore-lib": "^0.15.0",
     "body-parser": "^1.18.2",
     "chart.js": "^2.7.1",
     "express": "^4.16.2",
