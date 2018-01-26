@@ -22,7 +22,7 @@ export class LoginService {
       this.autenticaUsuario = true;
       console.log('foi');
       this.mostrarMenuEmitter.emit(true);
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
     } else {
       this.autenticaUsuario = false;
       this.mostrarMenuEmitter.emit(false);
