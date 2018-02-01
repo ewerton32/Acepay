@@ -3,7 +3,7 @@ import { EnderecoAcepay } from '../util_acepay/EnderecoAcepay';
 
 // Classe ClienteAcepay
 // tslint:disable-next-line:one-line
-export class ClienteAcepay {
+export class ClienteAcepay{
 
     private id_cli_acepay = 0;
     private nome_cli_acepay: string;
@@ -16,8 +16,9 @@ export class ClienteAcepay {
 
 
 
+
     constructor() {
-    }
+    };
 
 
 }

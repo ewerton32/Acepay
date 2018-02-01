@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const indexRoutes = require('./index.js');
 
 //settings 
-app.set('port', process.env.PORT || '3000');
+app.set('port', process.env.PORT || '4200');
 
 //midleware 
 app.use(logger('dev'));

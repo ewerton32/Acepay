@@ -27,9 +27,9 @@ let response = {
 };
 
 // Get users
-router.get('/users', (req, res) => {
+router.get('/cliente', (req, res) => {
     connection((db) => {
-        db.collection('users')
+        db.collection('cliente')
             .find()
             .toArray()
             .then((users) => {

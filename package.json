@@ -4,7 +4,8 @@
   "description": "Projeto para pós graduação IFPE Garanhuns",
   "main": "index.js",
   "scripts": {
-    "test": "test_acepay"
+    "test": "test_acepay",
+    "start": "/app.js"
   },
   "repository": {
     "type": "git",
@@ -40,8 +41,8 @@
     "body-parser": "^1.18.2",
     "chart.js": "^2.7.1",
     "express": "^4.16.2",
-    "firebase": "^4.6.2",
     "font-awesome": "^4.7.0",
+    "mongose": "0.0.2-security",
     "primeng": "^4.2.2",
     "zone.js": "^0.6.23"
   }
